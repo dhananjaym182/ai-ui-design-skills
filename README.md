@@ -1,85 +1,89 @@
 # AI UI Design Skills
 
-A collection of production-ready AI skills for designing modern SaaS interfaces, brand assets, and design systems. Compatible with Claude Code, Cursor, Windsurf, and other AI coding assistants.
+[中文版](./README_zh.md) (Coming soon)
 
-## 📦 Skills Included
+> **Production Ready** — Professional UI/UX design skills for AI coding assistants. Plug into your favorite AI coding tool and get structured, production-quality guidance for modern SaaS interfaces, design systems, and brand assets.
 
-### 1. **ui-ux-design-system**
-Premium neutral-first UI/UX design system for product interfaces. Use for dashboards, settings screens, editors, forms, tables, modals, and interaction patterns.
+Development skills for AI coding agents. Plug into your favorite AI coding tool and get structured, production-quality guidance for UI/UX design, SaaS interfaces, typography systems, and brand asset generation.
 
-**Use when:** Designing or reviewing pages, components, or making design decisions about hierarchy, tokens, spacing, and cross-page consistency.
+## Skills
 
-### 2. **saas-ui-ux-designer-with-flex**
-Full-system SaaS UI/UX design workflow with advanced flex/grid layout patterns. Includes typography system, flexibility rules, and page blueprints.
+| Skill | Description |
+|-------|-------------|
+| `ui-ux-design-system` | Premium neutral-first UI/UX design system for product interfaces. Use for dashboards, settings screens, editors, forms, tables, modals, and interaction patterns. Includes design philosophy, tokens, spacing, component rules, and responsive layouts. |
+| `saas-ui-ux-designer-with-flex` | Full-system SaaS UI/UX design workflow with advanced flex/grid layout patterns. Includes typography system, flexibility rules, page blueprints, and production-ready component systems. Perfect for complex SaaS interfaces with sophisticated layout requirements. |
+| `saas-ui-ux-designer-skill-typography-flex` | Specialized typography and flexibility system for SaaS products. Focuses on type hierarchy, scale, weight, spacing, and responsive layout rules. Use when refining typography rhythm or implementing responsive text systems. |
+| `saas-product-ui-system` | Complete product UI system with design philosophy, tokens, component rules, and AI product patterns. Use when building or refactoring entire product UI systems with consistent patterns across multiple pages. |
+| `image-logo-icons` | Generate structured image prompts for brand visuals: logos, UI icons, favicons/PWA icons, featured blog images, and Open Graph social cards. Use when designing brand identity assets or creating reusable prompt templates for image generation models. |
 
-**Use when:** Building complex SaaS interfaces with sophisticated layout requirements, responsive behavior, and production-ready component systems.
+## Installation
 
-### 3. **saas-ui-ux-designer-skill-typography-flex**
-Specialized typography and flexibility system for SaaS products. Focuses on type hierarchy, scale, weight, spacing, and responsive layout rules.
-
-**Use when:** Refining typography rhythm, improving readability, or implementing responsive text systems.
-
-### 4. **saas-product-ui-system**
-Complete product UI system with design philosophy, tokens, component rules, and AI product patterns.
-
-**Use when:** Building or refactoring entire product UI systems with consistent patterns across multiple pages.
-
-### 5. **image-logo-icons**
-Generate structured image prompts for brand visuals: logos, UI icons, favicons/PWA icons, featured blog images, and Open Graph social cards.
-
-**Use when:** Designing brand identity assets, social preview graphics, or creating reusable prompt templates for image generation models.
-
-## 🚀 Installation
-
-### For Claude Code
+### Claude Code
 
 ```bash
-# Copy skills to Claude Code skills directory
-cp -r ui-ux-design-system ~/.claude/skills/
-cp -r saas-ui-ux-designer-with-flex ~/.claude/skills/
-cp -r saas-ui-ux-designer-skill-typography-flex ~/.claude/skills/
-cp -r saas-product-ui-system ~/.claude/skills/
-cp -r image-logo-icons ~/.claude/skills/
+claude plugin marketplace add https://github.com/dhananjaym182/ai-ui-design-skills
+claude plugin install ai-ui-design-skills
 ```
 
-### For Cursor
+### Cursor
 
 ```bash
-# Copy skills to Cursor skills directory
-cp -r ui-ux-design-system ~/.cursor/skills/
-cp -r saas-ui-ux-designer-with-flex ~/.cursor/skills/
-cp -r saas-ui-ux-designer-skill-typography-flex ~/.cursor/skills/
-cp -r saas-product-ui-system ~/.cursor/skills/
-cp -r image-logo-icons ~/.cursor/skills/
+git clone https://github.com/dhananjaym182/ai-ui-design-skills.git ~/.cursor/ai-ui-design-skills
 ```
 
-### For Windsurf
+Add to your Cursor settings — point the skills path to `~/.cursor/ai-ui-design-skills/skills/`.
+
+### Codex
 
 ```bash
-# Copy skills to Windsurf skills directory
-cp -r ui-ux-design-system ~/.windsurf/skills/
-cp -r saas-ui-ux-designer-with-flex ~/.windsurf/skills/
-cp -r saas-ui-ux-designer-skill-typography-flex ~/.windsurf/skills/
-cp -r saas-product-ui-system ~/.windsurf/skills/
-cp -r image-logo-icons ~/.windsurf/skills/
+git clone https://github.com/dhananjaym182/ai-ui-design-skills.git ~/.codex/ai-ui-design-skills
+
+mkdir -p ~/.agents/skills
+ln -s ~/.codex/ai-ui-design-skills/skills ~/.agents/skills/ai-ui-design-skills
 ```
 
-### For Other AI Coding Tools
+Restart Codex to discover the skills. See [`.codex/INSTALL.md`](.codex/INSTALL.md) for Windows instructions and details.
 
-Most AI coding assistants support custom skills/prompts. Check your tool's documentation for the skills directory location and copy the folders there.
+### OpenCode
 
-## 📖 Usage
+```bash
+git clone https://github.com/dhananjaym182/ai-ui-design-skills.git ~/.ai-ui-design-skills
 
-Each skill contains:
-- `SKILL.md` - Main skill definition with workflow and usage instructions
-- `agents/` - Specialized agent configurations (if applicable)
-- `references/` - Detailed reference documentation and design system specs
-- `assets/` - Token files, CSS templates, and other reusable assets
+mkdir -p ~/.config/opencode/skills
+ln -s ~/.ai-ui-design-skills/skills/* ~/.config/opencode/skills/
+```
 
-### Example: Using ui-ux-design-system
+Restart OpenCode to discover the skills. See [`.opencode/INSTALL.md`](.opencode/INSTALL.md) for details.
+
+### Windsurf
+
+```bash
+git clone https://github.com/dhananjaym182/ai-ui-design-skills.git ~/.windsurf/ai-ui-design-skills
+
+mkdir -p ~/.windsurf/skills
+ln -s ~/.windsurf/ai-ui-design-skills/skills/* ~/.windsurf/skills/
+```
+
+Restart Windsurf to discover the skills. See [`.windsurf/INSTALL.md`](.windsurf/INSTALL.md) for details.
+
+## Design Philosophy
+
+All skills follow these principles:
+
+1. **Neutral-first surfaces** — Calm, premium aesthetic
+2. **System-driven** — Reusable components over one-off styles
+3. **Production-ready** — Real states (empty, loading, error)
+4. **Responsive by default** — Mobile, tablet, desktop layouts
+5. **Semantic colors** — Color only for status and meaning
+6. **Typography hierarchy** — Clear visual hierarchy through type
+7. **Accessibility** — WCAG-compliant patterns
+
+## Usage Examples
+
+### Design a Settings Page
 
 ```
-Design a settings page for a SaaS dashboard with user profile, notification preferences, and billing sections.
+Use ui-ux-design-system to design a settings page with user profile, notification preferences, and billing sections.
 ```
 
 The AI will automatically apply:
@@ -90,10 +94,10 @@ The AI will automatically apply:
 - Dark/light mode parity
 - Responsive layout rules
 
-### Example: Using image-logo-icons
+### Create Brand Assets
 
 ```
-Create a logo for "DataFlow" - a data analytics SaaS platform.
+Use image-logo-icons to create a logo for "DataFlow" - a data analytics SaaS platform.
 Style: modern minimalist, primary color: blue, mood: professional and trustworthy
 ```
 
@@ -102,42 +106,27 @@ The AI will generate:
 - Render settings
 - Variation ideas
 
-## 🎨 Design Philosophy
-
-All skills follow these principles:
-
-1. **Neutral-first surfaces** - Calm, premium aesthetic
-2. **System-driven** - Reusable components over one-off styles
-3. **Production-ready** - Real states (empty, loading, error)
-4. **Responsive by default** - Mobile, tablet, desktop layouts
-5. **Semantic colors** - Color only for status and meaning
-6. **Typography hierarchy** - Clear visual hierarchy through type
-7. **Accessibility** - WCAG-compliant patterns
-
-## 🛠️ Customization
-
-Each skill can be customized by editing:
-- Design tokens in `assets/` or `references/`
-- Component rules in `references/`
-- Workflow steps in `SKILL.md`
-
-## 📝 Skill Structure
+### Build Complex Layouts
 
 ```
-skill-name/
-├── SKILL.md              # Main skill definition
-├── agents/               # Agent configurations
-│   └── *.md
-├── references/           # Reference documentation
-│   ├── design-system-skills.md
-│   ├── typography-system.md
-│   └── ...
-└── assets/              # Reusable assets
-    ├── default-tokens.css
-    └── ...
+Use saas-ui-ux-designer-with-flex to design a dashboard with metrics cards, data tables, and action panels using flex/grid layouts.
 ```
 
-## 🤝 Contributing
+The AI will apply:
+- Advanced flex/grid patterns
+- Typography system
+- Responsive behavior
+- Component composition rules
+
+## Skill Structure
+
+Each skill contains:
+- `SKILL.md` — Main skill definition with workflow and usage instructions
+- `agents/` — Specialized agent configurations (if applicable)
+- `references/` — Detailed reference documentation and design system specs
+- `assets/` — Token files, CSS templates, and other reusable assets
+
+## Contributing
 
 Contributions are welcome! To add or improve a skill:
 
@@ -147,29 +136,16 @@ Contributions are welcome! To add or improve a skill:
 4. Test with your AI coding assistant
 5. Submit a pull request
 
-## 📄 License
+## License
 
-MIT License - feel free to use these skills in your projects.
+[MIT](./LICENSE)
 
-## 🔗 Related Resources
+## Related Resources
 
 - [Claude Code Documentation](https://docs.anthropic.com/claude/docs)
 - [Cursor Documentation](https://cursor.sh/docs)
 - [Windsurf Documentation](https://windsurf.ai/docs)
-
-## 💡 Tips
-
-- Start with `ui-ux-design-system` for general UI work
-- Use `saas-ui-ux-designer-with-flex` for complex layouts
-- Use `image-logo-icons` for brand asset generation
-- Combine skills for comprehensive design workflows
-
-## 🐛 Issues & Support
-
-If you encounter issues or have questions:
-1. Check the skill's `SKILL.md` for usage instructions
-2. Review the `references/` documentation
-3. Open an issue on GitHub
+- [OpenCode Documentation](https://opencode.ai/docs)
 
 ---
 

@@ -1,0 +1,12 @@
+{
+  "name": "ai-ui-design-skills",
+  "description": "Production-ready AI skills for designing modern SaaS interfaces, brand assets, and design systems",
+  "version": "1.0.0",
+  "author": {
+    "name": "AI UI Design Skills Contributors"
+  },
+  "homepage": "https://github.com/dhananjaym182/ai-ui-design-skills",
+  "repository": "https://github.com/dhananjaym182/ai-ui-design-skills",
+  "license": "MIT",
+  "keywords": ["skills", "ui", "ux", "design", "saas", "design-system", "typography", "branding"]
+}
