@@ -1,0 +1,4 @@
+interface:
+  display_name: "SaaS Product UI System"
+  short_description: "Canonical SaaS product UI workflow"
+  default_prompt: "Use $saas-product-ui-system to design, review, or implement a calm, production-ready SaaS product interface with strong hierarchy, responsive structure, and reusable system patterns."

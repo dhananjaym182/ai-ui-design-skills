@@ -1,0 +1,4 @@
+interface:
+  display_name: "UI/UX Design System"
+  short_description: "Premium product UI/UX workflow"
+  default_prompt: "Use $ui-ux-design-system to design a calm, premium, production-ready product interface."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Image, Logo & Icon Prompts"
+  short_description: "Generate production-ready prompts for brand visuals."
+  default_prompt: "Use $image-logo-icons to create a logo, icon, or social image prompt from my brand inputs."

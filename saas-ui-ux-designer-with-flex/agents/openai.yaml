@@ -1,0 +1,4 @@
+interface:
+  display_name: "SaaS UI Design System"
+  short_description: "Full-system SaaS product UI skill"
+  default_prompt: "Use $saas-ui-ux-designer-with-flex to design a premium SaaS interface with a calm, system-first product UI."

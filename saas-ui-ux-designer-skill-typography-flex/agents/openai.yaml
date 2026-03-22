@@ -1,0 +1,4 @@
+interface:
+  display_name: "SaaS Typography & Flex UI"
+  short_description: "Typography/flex-focused SaaS UI skill"
+  default_prompt: "Use $saas-ui-ux-designer-skill-typography-flex to design a premium SaaS page with strong typography and clean flex-based layout."
